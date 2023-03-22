@@ -7,6 +7,8 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private GameObject tile;
 
+    public Dictionary<Point, TileScript> Tiles { get; set; }
+
     public float TileSize
     {
         get { return tile.GetComponent<SpriteRenderer>().sprite.bounds.size.x; }
@@ -26,6 +28,8 @@ public class LevelManager : MonoBehaviour
 
     private void createLevel() 
     {
+        Tiles = new Dictionary<Point, TileScript>();
+
         Vector3 worldStart = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height));
         for (int y = 0; y < 5; y++) 
         {
@@ -40,6 +44,7 @@ public class LevelManager : MonoBehaviour
     {
         TileScript newTile = Instantiate(tile).GetComponent<TileScript>();
         newTile.Setup(new Point(x, y), new Vector3(worldStart.x + TileSize * x, worldStart.y - TileSize * y, 0));
+        Tiles.Add(newTile.GridPosition, newTile);
     }
 }
 
