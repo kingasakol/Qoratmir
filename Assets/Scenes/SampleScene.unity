@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tile: {fileID: 9150441463767535981, guid: f17d99f9426f1494999890fbf6df919f, type: 3}
+  portalPrefab: {fileID: 244249755532916298, guid: 9ef613855df30a94a8a9b9460ea2470a, type: 3}
 --- !u!4 &366867239
 Transform:
   m_ObjectHideFlags: 0

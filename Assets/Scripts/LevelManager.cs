@@ -7,6 +7,11 @@ public class LevelManager : MonoBehaviour
     [SerializeField]
     private GameObject tile;
 
+    [SerializeField]
+    private GameObject portalPrefab;
+
+    private Point portalPos;
+
     public Dictionary<Point, TileScript> Tiles { get; set; }
 
     public float TileSize
@@ -17,7 +22,8 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        createLevel();
+        CreateLevel();
+        SpawnPortal();
     }
 
     // Update is called once per frame
@@ -26,7 +32,7 @@ public class LevelManager : MonoBehaviour
         
     }
 
-    private void createLevel() 
+    private void CreateLevel() 
     {
         Tiles = new Dictionary<Point, TileScript>();
 
@@ -35,16 +41,22 @@ public class LevelManager : MonoBehaviour
         {
             for (int x = 0 ; x < 5; x++) 
             {
-                placeTile(x, y, worldStart);
+                PlaceTile(x, y, worldStart);
             }
         }
     }
 
-    private void placeTile(int x, int y, Vector3 worldStart) 
+    private void PlaceTile(int x, int y, Vector3 worldStart) 
     {
         TileScript newTile = Instantiate(tile).GetComponent<TileScript>();
         newTile.Setup(new Point(x, y), new Vector3(worldStart.x + TileSize * x, worldStart.y - TileSize * y, 0));
         Tiles.Add(newTile.GridPosition, newTile);
+    }
+
+    private void SpawnPortal() 
+    {
+        portalPos = new Point(0, 0);
+        Instantiate(portalPrefab, Tiles[portalPos].GetComponent<TileScript>().WorldPosition, Quaternion.identity);
     }
 }
 
