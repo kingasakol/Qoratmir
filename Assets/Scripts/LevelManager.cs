@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class LevelManager : Singleton<LevelManager>
 {
     [SerializeField]
     private GameObject tile;
 
     [SerializeField]
     private GameObject portalPrefab;
+
+    [SerializeField]
+    private Transform map;
 
     private Point portalPos;
 
@@ -37,9 +40,9 @@ public class LevelManager : MonoBehaviour
         Tiles = new Dictionary<Point, TileScript>();
 
         Vector3 worldStart = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height));
-        for (int y = 0; y < 5; y++) 
+        for (int y = 0; y < 8; y++) 
         {
-            for (int x = 0 ; x < 5; x++) 
+            for (int x = 0 ; x < 15; x++) 
             {
                 PlaceTile(x, y, worldStart);
             }
@@ -49,8 +52,7 @@ public class LevelManager : MonoBehaviour
     private void PlaceTile(int x, int y, Vector3 worldStart) 
     {
         TileScript newTile = Instantiate(tile).GetComponent<TileScript>();
-        newTile.Setup(new Point(x, y), new Vector3(worldStart.x + TileSize * x, worldStart.y - TileSize * y, 0));
-        Tiles.Add(newTile.GridPosition, newTile);
+        newTile.Setup(new Point(x, y), new Vector3(worldStart.x + TileSize * x, worldStart.y - TileSize * y, 0), map);
     }
 
     private void SpawnPortal() 
