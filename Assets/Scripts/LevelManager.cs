@@ -15,6 +15,8 @@ public class LevelManager : Singleton<LevelManager>
 
     private Point portalPos;
 
+    private Point mapSize;
+
     public Dictionary<Point, TileScript> Tiles { get; set; }
 
     public float TileSize
@@ -39,6 +41,8 @@ public class LevelManager : Singleton<LevelManager>
     {
         Tiles = new Dictionary<Point, TileScript>();
 
+        mapSize = new Point(15, 8);
+
         Vector3 worldStart = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height));
         for (int y = 0; y < 8; y++) 
         {
@@ -59,6 +63,11 @@ public class LevelManager : Singleton<LevelManager>
     {
         portalPos = new Point(0, 0);
         Instantiate(portalPrefab, Tiles[portalPos].GetComponent<TileScript>().WorldPosition, Quaternion.identity);
+    }
+
+    public bool InBounds(Point position)
+    {
+        return position.X >= 0 && position.Y >= 0 && position.X < 15 && position.Y < 8;
     }
 }
 

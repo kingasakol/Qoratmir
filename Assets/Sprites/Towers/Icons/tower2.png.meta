@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a31a774bfc8c3a4449b3bf7bcbd113f0
+guid: 53ad0a92124588649882a4e8581af5a6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -117,43 +117,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tower1_2
+      name: tower2_0
       rect:
         serializedVersion: 2
         x: 39
         y: 23
         width: 230
         height: 322
-      alignment: 9
-      pivot: {x: -0.1, y: 0.8}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cba62908737472843bf54294e2e81b45
-      internalID: 1122650098
+      spriteID: 9f19ed71ce2c79243889085778d72cd5
+      internalID: -2131024327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower1_3
+      name: tower2_1
       rect:
         serializedVersion: 2
-        x: 346
+        x: 347
         y: 19
         width: 230
         height: 322
-      alignment: 9
-      pivot: {x: -0.1, y: 0.8}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b422f8c91876674dbcfdaf53bc64848
-      internalID: -1952753022
+      spriteID: 02cd7ba89b65ecf4f992202797ed2022
+      internalID: 848177643
       vertices: []
       indices: 
       edges: []
@@ -169,10 +169,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tower1_0: 1318015361
-      tower1_1: -1426588349
-      tower1_2: 1122650098
-      tower1_3: -1952753022
+      tower2_0: -2131024327
+      tower2_1: 848177643
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

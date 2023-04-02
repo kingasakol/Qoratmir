@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,12 +120,12 @@ TextureImporter:
       name: tower4_2
       rect:
         serializedVersion: 2
-        x: 36
-        y: 15
-        width: 233
-        height: 330
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 39
+        y: 23
+        width: 230
+        height: 322
+      alignment: 9
+      pivot: {x: -0.1, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: tower4_3
       rect:
         serializedVersion: 2
-        x: 338
-        y: 13
-        width: 233
-        height: 330
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 346
+        y: 19
+        width: 230
+        height: 322
+      alignment: 9
+      pivot: {x: -0.1, y: 0.8}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a31a774bfc8c3a4449b3bf7bcbd113f0
+guid: 6a3af0a1d69ceae4280793683c17055a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,49 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: tower1_2
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 23
-        width: 230
-        height: 322
-      alignment: 9
-      pivot: {x: -0.1, y: 0.8}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cba62908737472843bf54294e2e81b45
-      internalID: 1122650098
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tower1_3
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 19
-        width: 230
-        height: 322
-      alignment: 9
-      pivot: {x: -0.1, y: 0.8}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b422f8c91876674dbcfdaf53bc64848
-      internalID: -1952753022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -168,11 +126,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      tower1_0: 1318015361
-      tower1_1: -1426588349
-      tower1_2: 1122650098
-      tower1_3: -1952753022
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

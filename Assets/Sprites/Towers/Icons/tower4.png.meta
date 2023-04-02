@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a31a774bfc8c3a4449b3bf7bcbd113f0
+guid: d0953432bc4a65d42ace7822f17dcc33
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tower1_2
+      name: tower4_2
       rect:
         serializedVersion: 2
         x: 39
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cba62908737472843bf54294e2e81b45
-      internalID: 1122650098
+      spriteID: ca40ac388c8072745af1b6a2a7b5cfb8
+      internalID: -2142527049
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: tower1_3
+      name: tower4_3
       rect:
         serializedVersion: 2
         x: 346
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b422f8c91876674dbcfdaf53bc64848
-      internalID: -1952753022
+      spriteID: 644110beae23e04418412b7fc04f94f1
+      internalID: 2047746077
       vertices: []
       indices: 
       edges: []
@@ -169,10 +169,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      tower1_0: 1318015361
-      tower1_1: -1426588349
-      tower1_2: 1122650098
-      tower1_3: -1952753022
+      tower4_0: 54326691
+      tower4_1: -873839208
+      tower4_2: -2142527049
+      tower4_3: 2047746077
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
